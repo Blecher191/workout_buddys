@@ -4,7 +4,7 @@ A workout tracker for logging your own workouts and viewing an approved buddy's 
 
 ## Current status
 
-Repository setup only. There is no runnable application, database schema, deployment, or test suite yet.
+The backend foundation exists in [backend/](backend/README.md): a FastAPI service with a health endpoint, pinned dependencies, tests, and CI. There is no database schema, authentication, workout functionality, frontend, or deployment yet.
 
 The existing `package.json` is an initial npm placeholder. Its `npm test` command intentionally fails because no tests have been configured; it is not an application setup command.
 

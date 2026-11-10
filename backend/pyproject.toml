@@ -1,0 +1,22 @@
+[project]
+name = "workout-buddys-backend"
+version = "0.1.0"
+description = "Backend API for Workout Buddys"
+requires-python = ">=3.13"
+# Direct dependencies only. Exact, fully resolved versions live in requirements.txt.
+dependencies = [
+    "fastapi>=0.115",
+    "uvicorn>=0.30",
+    "pydantic-settings>=2.5",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.ruff]
+line-length = 100
+target-version = "py313"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP"]
