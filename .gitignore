@@ -1,0 +1,48 @@
+# Local environment and secrets
+.env
+.env.*
+!.env.example
+!.env.*.example
+*.pem
+*.key
+
+# Python environments, caches, and build artifacts
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+.coverage.*
+htmlcov/
+*.egg-info/
+
+# JavaScript dependencies and build artifacts
+node_modules/
+dist/
+build/
+coverage/
+.vite/
+*.tsbuildinfo
+
+# Local logs and tooling
+*.log
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Infrastructure state and local overrides
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+*.tfvars
+*.tfvars.json
+!*.tfvars.example
+!*.tfvars.json.example
+
+# Keep dependency lockfiles tracked.
