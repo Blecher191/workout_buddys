@@ -40,3 +40,5 @@ Do not commit credentials. Local environment files and virtual environments are 
 4. Add a frontend and prepare deployment.
 
 See [docs/project-plan.md](docs/project-plan.md) for scope and acceptance criteria.
+
+See [Sprint tracking](docs/sprints.md) for live milestones, task statuses, and assignment rules. Planned work is not an instruction for agents to start implementation.
