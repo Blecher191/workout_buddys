@@ -15,7 +15,8 @@ Branch protection is not configured by these files; this document describes the 
 
 Run checks appropriate to the change and record the commands and results in the pull request.
 For documentation-only changes, inspect links and run `git diff --check`.
-There is currently no application test suite or CI workflow. Add meaningful checks with the first runnable implementation; do not replace the placeholder test with a fake success.
+The Python backend has tests and the `Backend` Actions workflow. From `backend/`, run `python -m pip check`, `ruff check .`, `ruff format --check .`, and `pytest -q -W error` in the configured environment (see backend/README.md).
+CI runs on every pull request, including documentation-only changes, so the required `checks` status can always report. Do not replace the root placeholder npm test with a fake success.
 
 ## Credentials and dependencies
 
@@ -30,3 +31,5 @@ There is currently no application test suite or CI workflow. Add meaningful chec
 One contributor owns a change. Use separate branches and worktrees for concurrent implementation.
 Share the task scope, revision, changed files, test results, and known blockers at handoff.
 Review the exact revision intended for integration.
+
+See [docs/sprints.md](docs/sprints.md) for milestones, status labels, assignment gates, and completion criteria. Use the implementation-task issue template for new work.
