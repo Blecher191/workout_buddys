@@ -2,6 +2,17 @@
 
 GitHub milestones are the sprint record. GitHub issues define assignments; PRs contain the authoritative implementation-readiness reports. This is an issue-and-label workflow, not an automated GitHub Projects board or agent dispatcher.
 
+## Live tracking
+
+- [All sprint milestones](https://github.com/Blecher191/workout_buddys/milestones)
+- [Sprint 0 checklist and verification record](https://github.com/Blecher191/workout_buddys/issues/7)
+- [Sprint 1 backlog](https://github.com/Blecher191/workout_buddys/milestone/2)
+- [Ready tasks](https://github.com/Blecher191/workout_buddys/issues?q=is%3Aissue%20is%3Aopen%20label%3Astatus%3Aready)
+- [Work in progress](https://github.com/Blecher191/workout_buddys/issues?q=is%3Aissue%20is%3Aopen%20label%3Astatus%3Ain-progress)
+- [Blocked tasks](https://github.com/Blecher191/workout_buddys/issues?q=is%3Aissue%20is%3Aopen%20label%3Astatus%3Ablocked)
+
+The Backend workflow's `checks` job is required on main, bound to the GitHub Actions app, with an up-to-date branch required. This applies to documentation-only PRs as well as application changes.
+
 ## Milestones
 
 | Milestone | Outcome | State at planning |
