@@ -17,11 +17,11 @@ The Backend workflow's `checks` job is required on main, bound to the GitHub Act
 
 | Milestone | Outcome | State at planning |
 | --- | --- | --- |
-| Sprint 0 - Foundation and workflow | Backend foundation, hierarchy, agent handoffs, reliable CI and branch protection | Close only after issue #7 acceptance checks pass |
-| Sprint 1 - Identity and private data | Schema migrations, authentication, ownership rules | Backlog; implementation unassigned |
+| Sprint 0 - Foundation and workflow | Backend foundation, hierarchy, agent handoffs, reliable CI and branch protection | Complete; issue #7 and milestone closed |
+| Sprint 1 - Identity and private data | Local database tests, registration, private schema, groups/invitations | Kickoff authorized 2026-11-15; see task issues |
 | Sprint 2 - Workout tracking | Log, view, edit and delete workouts through a usable flow | Proposed |
-| Sprint 3 - Personal progress | History filters and accurate personal aggregates | Proposed |
-| Sprint 4 - Buddy summaries | Explicit sharing and restricted aggregates | Proposed |
+| Sprint 3 - Groups, progress and highlights | Explicit feed sharing, comparisons and manual highlights | Proposed |
+| Sprint 4 - Release validation | Reserved for friends-trial preparation | Proposed |
 | Sprint 5 - Deployment | Verified hosted application and recovery procedure | Proposed |
 
 Dates are deliberately unset. Later milestones describe direction, not authorization to implement their contents. The live milestone and issue states in GitHub supersede this planning snapshot.
@@ -68,4 +68,6 @@ The legacy ruleset named `Protect main` was disabled and had no branch target at
 
 The owner agreed to individual strength sets: workout sessions contain exercise entries, and strength entries have child strength_sets rows for set number, reps, and weight. Cardio entries record duration and optional distance. Count sessions, not sets, for workout frequency.
 
-Before database implementation, inspect the hosted schema for manual changes and preserve existing data. Propose versioned migrations, grants, RLS and ownership tests in a dedicated task. Confirm unit conventions, date handling, profile creation, and initial buddy scope in that task. This document does not authorize hosted schema changes or new feature work.
+The [approved design](superpowers/specs/2026-11-15-sprint-1-design.md) defines units, dates, profiles, groups and sharing. Inspect the hosted schema read-only before implementation and preserve existing data. Implement and verify migrations locally; hosted changes require separate authorization.
+
+S1-01 publishes the approved design. S1-02 is the first DevOps task; S1-03 through S1-05 are Builder tasks gated by dependencies. S1-06 records integrated verification; review and QA also occur on each PR. See the Sprint 1 milestone for task links/status. Publication does not activate agents.
