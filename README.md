@@ -1,6 +1,6 @@
 # Workout Buddys
 
-A workout tracker for logging your own workouts and viewing an approved buddy's progress summaries.
+A personal workout tracker for up to 100 registered users, with flexible workout rotations and optional private groups. Sharing is explicit; personal workout records stay private.
 
 ## Current status
 
@@ -34,11 +34,12 @@ Do not commit credentials. Local environment files and virtual environments are 
 
 ## Next milestones
 
-1. Create the backend foundation, dependency setup, health endpoint, and relevant CI.
-2. Add versioned database migrations, authentication, and ownership policies.
-3. Implement an authenticated workout workflow and approved buddy summaries.
-4. Add a frontend and prepare deployment.
+1. Sprint 0 complete: backend foundation, CI, branch protection, and agent handoffs.
+2. Sprint 1: local database testing, controlled registration, profiles, private schema, groups/invitations.
+3. Sprint 2: usable workout logging, five split options, rotations, and rest reminders.
+4. Sprint 3: explicit group sharing, progress comparisons, and manually saved highlights.
+5. Later: release validation and authorized deployment for a friends trial.
 
-See [docs/project-plan.md](docs/project-plan.md) for scope and acceptance criteria.
+The owner approved the [schema and Sprint 1 design](docs/superpowers/specs/2026-11-15-sprint-1-design.md) on 2026-11-15. Approval records scope, not completed functionality.
 
-See [Sprint tracking](docs/sprints.md) for live milestones, task statuses, and assignment rules. Planned work is not an instruction for agents to start implementation.
+See [project plan](docs/project-plan.md) and [sprint tracking](docs/sprints.md). Planned work is not an instruction for agents to start implementation; follow assigned GitHub issues.
